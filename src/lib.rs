@@ -84,7 +84,7 @@ impl ToString for Endpoint
     }
 }
 
-#[derive(Serialize, Deserialize, Copy, Clone, EnumIter)]
+#[derive(Serialize, Deserialize, Copy, Clone, Eq, PartialEq)]
 pub enum Country
 {
     US,
