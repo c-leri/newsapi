@@ -2,7 +2,6 @@ use std::ops::AddAssign;
 #[cfg(feature = "async")]
 use reqwest::Method;
 use serde::{Deserialize, Serialize};
-use strum_macros::EnumIter;
 use url::Url;
 
 const BASE_URL: &str = "https://newsapi.org/v2";
