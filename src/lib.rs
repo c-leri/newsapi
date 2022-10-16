@@ -1,6 +1,6 @@
 #[cfg(feature = "async")]
 use reqwest::Method;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use url::Url;
 
 const BASE_URL: &str = "https://newsapi.org/v2";
@@ -82,6 +82,7 @@ impl ToString for Endpoint
     }
 }
 
+#[derive(Serialize, Deserialize)]
 pub enum Country
 {
     US,
